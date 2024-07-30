@@ -12,8 +12,9 @@ firebaseConfig = {
 }
 
 fb.initialize_app(firebaseConfig)
+auth=fb.auth()
 def signin():
-  ul=fb.create_user_with_email_and_password(email,psd)
+  ul=auth.create_user_with_email_and_password(email,psd)
   st.title(f"Welcome{usr}")
 lg=st.form("Sign in")
 usr=lg.text_input("Username")
