@@ -3,7 +3,7 @@ import pyrebase as fb
 firebaseConfig = {
   "apiKey": "AIzaSyDWruUPKro1RzE5ZejZ2G7ie9Pm22hz814",
   "authDomain": "py-login-55126.firebaseapp.com",
-"databaseURL":"https://console.firebase.google.com/project/py-login-55126/database/py-login-55126-default-rtdb/data/~2F",
+  "databaseURL":"https://console.firebase.google.com/project/py-login-55126/database/py-login-55126-default-rtdb/data/~2F",
   "projectId": "py-login-55126",
   "storageBucket": "py-login-55126.appspot.com",
   "messagingSenderId": "378309201398",
