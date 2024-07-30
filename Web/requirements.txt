@@ -1,2 +1,2 @@
 streamlit
-gingerit
+gingerit=0.8.0
