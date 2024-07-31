@@ -7,5 +7,5 @@ def signin():
 lg=st.form("Sign in")
 usr=lg.text_input("Username")
 email=lg.text_input("Email")
-psd=lg.text_input("Password")
+psd=lg.text_input("Password",type="password")
 btn=lg.form_submit_button("Sign in",help=None,on_click=signin)
