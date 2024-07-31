@@ -2,7 +2,7 @@ import streamlit as st
 
 
 def signin():
-  st.title(f"Welcome{usr}")
+  st.write(f"Welcome{usr}")
 #comment
 lg=st.form("Sign in")
 usr=lg.text_input("Username")
