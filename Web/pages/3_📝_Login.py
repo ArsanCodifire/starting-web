@@ -4,7 +4,7 @@ import streamlit as st
 def signin():
   st.write(f"Welcome {usr}")
 #comment
-st.selectbox("Choose",options=("NA","Sign In","Login"))
+login=st.selectbox("Choose",options=("NA","Sign In","Login"))
 if login=="Login":
     lg=st.form("Sign in")
     email=lg.text_input("Email")
