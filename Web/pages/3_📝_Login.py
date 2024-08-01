@@ -6,12 +6,12 @@ db=sb.create_client(url,api)
 
 def signin():
     auth=db.auth.sign_up({"email":email,"password":psd})
-    st.write(f"Hi{usr}")
+    st.write(f"Hi {usr}")
 def logout():
     db.auth.sign_out()
 def login():
     session=db.auth.sign_in({"email":email_l,"password":psd_l})
-    st.write(f"Welcome back{usr}")
+    st.write(f"Welcome back {usr}")
     st.button("Login Out",help=None,on_click=logout)
 #comment
 login=st.selectbox("Choose",options=("NA","Sign In","Login"))
