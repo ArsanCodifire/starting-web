@@ -1,4 +1,5 @@
 import streamlit as st
+url="https://dojvibmzlvoqnccztpvb.supabase.co"
 api="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRvanZpYm16bHZvcW5jY3p0cHZiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjI1MjQzMzgsImV4cCI6MjAzODEwMDMzOH0.O88obpltWJCPqXrWSu_mKsgvEpU3xAREv8A9SMbjqyY"
 def signin():
     st.write(f"Hi{usr}")
