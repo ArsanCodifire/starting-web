@@ -5,12 +5,12 @@ api="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRvan
 db=sb.create_client(url,api)
 
 def signin():
-    auth=db.auth.sign_up(email=email,password=psd)
+    auth=db.auth.sign_up({email=email,password=psd})
     st.write(f"Hi{usr}")
 def logout():
     db.auth.sign_out()
 def login():
-    session=db.auth.sign_in(email=emaill,password=psdl)
+    session=db.auth.sign_in({email=emaill,password=psdl})
     st.write(f"Welcome back{usr}")
     st.button("Login Out",help=None,on_click=logout)
     
