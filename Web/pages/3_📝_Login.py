@@ -5,21 +5,20 @@ api="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRvan
 db=sb.create_client(url,api)
 
 def signin():
-    auth=db.auth.sign_up({email=email,password=psd})
+    auth=db.auth.sign_up({"email":email,"password":psd})
     st.write(f"Hi{usr}")
 def logout():
     db.auth.sign_out()
 def login():
-    session=db.auth.sign_in({email=emaill,password=psdl})
+    session=db.auth.sign_in({"email":email_l,"password":psd_l})
     st.write(f"Welcome back{usr}")
     st.button("Login Out",help=None,on_click=logout)
-    
 #comment
 login=st.selectbox("Choose",options=("NA","Sign In","Login"))
 if login=="Login":
     lg=st.form("Sign in")
-    emaill=lg.text_input("Email")
-    psdl=lg.text_input("Password",type="password")
+    email_l=lg.text_input("Email")
+    psd_l=lg.text_input("Password",type="password")
     btn=lg.form_submit_button("Sign in",help=None,on_click=signin)
 elif login=="Sign In":
     lg=st.form("Sign in")
