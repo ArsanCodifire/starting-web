@@ -1,19 +1,9 @@
 import streamlit as st
-from deta import Deta
-api="soSmB4Vx_v5ULTMa42khGAUxuZVTyfiVhmL7btXq3"
-dt=Deta(api)
-db=dt.Base("Loginid")
-
+api="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRvanZpYm16bHZvcW5jY3p0cHZiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjI1MjQzMzgsImV4cCI6MjAzODEwMDMzOH0.O88obpltWJCPqXrWSu_mKsgvEpU3xAREv8A9SMbjqyY"
 def signin():
-    db.put({"key":email,"username":usr,"password":psd})
     st.write(f"Hi{usr}")
 def login():
-    log_e=dB.fetch()["key"]
-    log_p=dB.fetch()["password"]
-    log_u=dB.fetch()["username"]
-    if emaill==log_e:
-        if psdl==log_p:
-            st.write(f"Welcome back{log_u}")
+    st.write(f"Welcome back{usr}")
 #comment
 login=st.selectbox("Choose",options=("NA","Sign In","Login"))
 if login=="Login":
