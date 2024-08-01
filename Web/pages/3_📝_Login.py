@@ -1,6 +1,6 @@
 import streamlit as st
 from deta import Deta
-api="EyDDRDhg_iyiNV4ShnC617vy7Zww4iEJxFbTKUVzz"
+api="soSmB4Vx_v5ULTMa42khGAUxuZVTyfiVhmL7btXq3"
 dt=Deta(api)
 db=dt.Base("Loginid")
 
