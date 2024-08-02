@@ -1,2 +1,2 @@
 import streamlit as st 
-st.audio("Techno-Ghost.mp3")
+st.audio("Web/pages/Techno-Ghost.MP3")
