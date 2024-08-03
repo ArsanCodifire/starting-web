@@ -1,4 +1,3 @@
-from markdown_it import MarkdownIt
 import streamlit as st
 st.set_page_config(
     page_title="Arsan Codifire",
