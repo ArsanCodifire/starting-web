@@ -10,7 +10,7 @@ def gen(prompt):
         max_tokens=500 
     )
     return response.generations[0].text.strip()
-msg=st.container(height=3000)
+msg=st.container(height=900)
 pr=msg.chat_input()
 with msg.chat_message("user"):
     msg.chat_message("assistant").write(gen(pr))
