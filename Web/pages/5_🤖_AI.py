@@ -1,6 +1,6 @@
 import streamlit as st
 import cohere as ai
-token=st.secrets("TOKEN")
+token=st.secrets["TOKEN"]
 def gen(prompt):
     co = ai.Client(token)
     mdl="command-xlarge-nightly"
