@@ -7,7 +7,7 @@ def gen(prompt):
     response = co.generate(
         model=mdl,
         prompt=prompt,
-        max_tokens=500 
+        max_tokens=1000 
     )
     return response.generations[0].text.strip()
 msg=st.container(height=250)
