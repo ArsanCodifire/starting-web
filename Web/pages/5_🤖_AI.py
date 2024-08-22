@@ -13,4 +13,5 @@ def gen(prompt):
 msg=st.container(height=900)
 pr=msg.chat_input()
 with msg.chat_message("user"):
+    msg.chat_message("user").write(pr)
     msg.chat_message("assistant").write(gen(pr))
