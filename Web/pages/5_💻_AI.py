@@ -16,4 +16,6 @@ with msg.chat_message("user"):
     try:
         msg.chat_message("user").write(pr)
         msg.chat_message("assistant").write(gen(pr))
+    except:
+        print("Wrong err")
 
