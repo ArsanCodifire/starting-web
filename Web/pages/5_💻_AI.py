@@ -12,10 +12,6 @@ def gen(prompt):
     return response.generations[0].text.strip()
 msg=st.container(height=250)
 pr=msg.chat_input()
-while True:
-    try:
-        msg.chat_message("user").write(pr)
-        msg.chat_message("assistant").write(gen(pr))
-    except:
-        print("Wrong err")
+with msg.chat_message("user").write(pr):
+    msg.chat_message("assistant").write(gen(pr))
 
