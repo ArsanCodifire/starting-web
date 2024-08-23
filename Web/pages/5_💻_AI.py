@@ -11,7 +11,7 @@ def gen(prompt):
     )
     return response.generations[0].text.strip()
 msg=st.container(height=250)
-prmpt=msg.chat_input()
-with msg.chat_message("user").write(prmpt):
-    msg.chat_message("assistant").write(gen(prmpt))
+pr=msg.chat_input()
+with msg.chat_message("user").write(pr):
+    msg.chat_message("assistant").write(gen(pr))
 
