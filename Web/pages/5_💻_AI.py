@@ -13,7 +13,7 @@ def gen(prompt,mdl):
 
 mdl=st.selectbox("Models",["command-xlarge-nightly","command-medium-nightly","generate-code-nightly"]) 
 
-msg=st.container(height=250)
+msg=st.container(height=350)
 pr=msg.chat_input()
 with msg.chat_message("user"):
     msg.chat_message("user").write(pr)
