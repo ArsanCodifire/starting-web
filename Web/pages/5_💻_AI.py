@@ -15,7 +15,8 @@ mdl=st.selectbox("Models",["command-xlarge-nightly","command-medium-nightly","ge
 
 msg=st.container(height=350)
 pr=msg.chat_input()
-with msg.chat_message("user"):
-    msg.chat_message("user").write(pr)
-    msg.chat_message("assistant").write(gen(pr,mdl))
-
+if pr:
+    with msg.chat_message("user"):
+        msg.markdown(pr)
+    with msg.chat_message("assistant"):
+        msg.markdown(gen(pr,mdl))
