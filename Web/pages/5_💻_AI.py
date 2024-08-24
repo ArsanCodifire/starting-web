@@ -11,7 +11,12 @@ def gen(prompt,mdl):
     )
     return response.generations[0].text.strip()
 
-mdl=st.selectbox("Models",["command-xlarge-nightly","command-medium-nightly"]) 
+mdl=st.selectbox("Models",["command-xlarge-nightly","command-medium-nightly"])
+if mdl=="command-xlarge-nightly":
+    st.write("Slow chatbot")
+elif mdl=="command-medium-nightly":
+    st.write("Fast chatbot")
+
 st.write("---------------------------------")
 pr=st.chat_input()
 if pr:
