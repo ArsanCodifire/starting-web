@@ -1,6 +1,7 @@
 import streamlit as st
 import cohere as ai
-
+st.title("Welcome to the AI sector.")
+st.balloons("Hi")
 token=st.secrets["TOKEN"]
 def gen(prompt,mdl):
     co = ai.Client(token)
@@ -23,5 +24,3 @@ if pr:
         st.markdown(pr)
     with st.chat_message("assistant"):
         st.markdown(gen(pr,mdl))
-        st.toast("You are chatting with Cohere AI")
-        st.balloons("Yay")
