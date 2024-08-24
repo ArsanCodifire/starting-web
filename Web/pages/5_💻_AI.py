@@ -16,10 +16,11 @@ if mdl=="command-xlarge-nightly":
     st.write("Slow chatbot")
 elif mdl=="command-medium-nightly":
     st.write("Fast chatbot")
-st.write("---------------------------------")
+
 pr=st.chat_input()
 if pr:
     with st.chat_message("user"):
         st.markdown(pr)
     with st.chat_message("assistant"):
         st.markdown(gen(pr,mdl))
+        st.toast("You are chatting with Cohere AI",icon=🎉🎉)
