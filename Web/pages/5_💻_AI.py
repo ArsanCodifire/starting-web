@@ -16,8 +16,10 @@ def gen(prompt,mdl):
 mdl=st.selectbox("Models",["command-xlarge-nightly","command-medium-nightly"])
 if mdl=="command-xlarge-nightly":
     st.write("Slow chatbot")
+    st.toast(f"Model selected {mdl}", icon="💻")
 elif mdl=="command-medium-nightly":
     st.write("Fast chatbot")
+    st.toast(f"Model selected {mdl}", icon="💻")
 
 pr=st.chat_input()
 if pr:
