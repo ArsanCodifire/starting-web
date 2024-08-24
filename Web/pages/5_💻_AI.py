@@ -23,4 +23,4 @@ if pr:
         st.markdown(pr)
     with st.chat_message("assistant"):
         st.markdown(gen(pr,mdl))
-        st.toast("You are chatting with Cohere AI",icon=🎉🎉)
+        st.toast("You are chatting with Cohere AI",icon="🎉🎉")
