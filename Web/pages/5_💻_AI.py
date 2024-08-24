@@ -1,9 +1,8 @@
 import streamlit as st
 import cohere as ai
 st.title("Welcome to the AI sector.")
-if i==1:
-    st.balloons()
-    i=i+1
+
+    
 token=st.secrets["TOKEN"]
 def gen(prompt,mdl):
     co = ai.Client(token)
