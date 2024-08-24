@@ -4,7 +4,7 @@ import cohere as ai
 token=st.secrets["TOKEN"]
 def gen(prompt,mdl):
     co = ai.Client(token)
-    response = co.generate_stream(
+    response = co.generate(
         model=mdl,
         prompt=prompt,
         max_tokens=1000 
