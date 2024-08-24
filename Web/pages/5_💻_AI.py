@@ -1,7 +1,6 @@
 import streamlit as st
 import cohere as ai
 st.title("Welcome to the AI sector.")
-i=1
 if i==1:
     st.balloons()
     i=i+1
