@@ -13,10 +13,9 @@ def gen(prompt,mdl):
 
 mdl=st.selectbox("Models",["command-xlarge-nightly","command-medium-nightly","generate-code-nightly"]) 
 
-msg=st.container(height=350)
-pr=msg.chat_input()
+pr=st.chat_input()
 if pr:
-    with msg.chat_message("user"):
-        msg.markdown(pr)
-    with msg.chat_message("assistant"):
-        msg.markdown(gen(pr,mdl))
+    with st.chat_message("user"):
+        st.markdown(pr)
+    with st.chat_message("assistant"):
+        st.markdown(gen(pr,mdl))
