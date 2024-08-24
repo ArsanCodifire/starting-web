@@ -11,7 +11,7 @@ def gen(prompt,mdl):
     )
     return response.generations[0].text.strip()
 
-mdl=st.selectbox("Models",["command-xlarge-nightly","command-medium-nightly","generate-code-nightly"]) 
+mdl=st.selectbox("Models",["command-xlarge-nightly","command-medium-nightly"]) 
 
 pr=st.chat_input()
 if pr:
