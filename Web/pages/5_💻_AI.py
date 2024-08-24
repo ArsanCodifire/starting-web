@@ -24,3 +24,4 @@ if pr:
         st.markdown(pr)
     with st.chat_message("assistant"):
         st.markdown(gen(pr,mdl))
+        st.toast('You used AI', icon='🎉')
