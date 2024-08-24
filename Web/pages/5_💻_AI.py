@@ -12,7 +12,7 @@ def gen(prompt,mdl):
     return response.generations[0].text.strip()
 
 mdl=st.selectbox("Models",["command-xlarge-nightly","command-medium-nightly"]) 
-
+st.write("---------------------------------")
 pr=st.chat_input()
 if pr:
     with st.chat_message("user"):
